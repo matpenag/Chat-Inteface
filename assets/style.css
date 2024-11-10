@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.user-profile img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.user-profile .iconos {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  align-items: center;
+  padding-left: 50px;
+  justify-content: flex-start;
+  transition: background-color 0.3s ease;
+}
+.iconos i {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .new-chat-btn {
+  background-color: #b89fdb;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar .contacts {
+  flex-grow: 1;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.contact img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact-info p {
+  font-size: 12px;
+  color: #666;
+}
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.main-content img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.main-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.main-content p {
+  color: #666;
+}
